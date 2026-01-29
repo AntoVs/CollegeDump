@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-int main() {
+int main(){
     int n, tq, i, time = 0, completed = 0;
     int bt[10], rem[10], ct[10], tat[10], wt[10];
     int totalTAT = 0, totalWT = 0;
@@ -52,7 +51,6 @@ int main() {
     printf("\nAvg TAT = %.2f", (float)totalTAT / n);
     printf("\nAvg WT  = %.2f", (float)totalWT / n);
     printf("\nThroughput = %.2f", (float)n / time);
-
     printf("\nContext Switch Count = %d\n", g - 1);
 
     printf("\nGantt Chart:\n|");
